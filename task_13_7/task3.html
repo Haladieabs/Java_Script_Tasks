@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+    <div id="vasa"></div>
+    <div id="vasa2"></div>
+    <div id="vasa3"></div>
+
+    <script>
+        let nana=document.getElementById("vasa");
+        let nama=document.getElementById("vasa2");
+        let nala=document.getElementById("vasa3");
+
+        // <.......>children for the first div
+        let hala=document.createElement("label");
+        hala.innerHTML="What is lorem ipsum?";
+        nana.appendChild(hala);
+        nana.style.border="1px solid black";
+        nana.style.width="29vw";
+        nana.style.height="10vh";
+        hala.style.fontSize="150%";
+        hala.style.fontWeight="bold";
+        nana.style.marginTop="5%";
+        nana.style.padding="5px";
+        nana.style.marginLeft="5%";
+        let hala2 =document.createElement("a");
+        hala2.href="https://www.lipsum.com/";
+        hala2.innerHTML="show";
+        nana.appendChild(hala2);
+        hala2.style.marginLeft="70%";
+        hala2.style.marginTop="-10px"
+        nana.style.backgroundColor="lightgray";
+        //< ..........>children for the second div
+          let hisham =document.createElement("p");
+          hisham.innerHTML="why we do use it?"
+          nama.appendChild(hisham);
+          hisham.style.backgroundColor="lightgray";
+          nama.style.border="1px solid black";
+          nama.style.width="30vw";
+          nama.style.height="40vh";
+          nama.style.marginTop="2%";
+          nama.style.marginLeft="5%";
+          hisham.style.marginTop="1px";
+          hisham.style.fontSize="x-large";
+          hisham.style.fontWeight="bold";
+          hisham.style.textAlign="left";
+          let hisham2=document.createElement("p");
+          hisham2.innerHTML="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).";
+         nama.appendChild(hisham2);
+         hisham2.style.color="gray";
+         let hisham3=document.createElement("a");
+         hisham3.href="https://www.lipsum.com/";
+         hisham3.innerHTML="Hide";
+         nama.appendChild(hisham3);
+//< .............> children for third div
+let ahlam =document.createElement("label");
+ahlam.innerHTML="Where does it come from?"
+nala.appendChild(ahlam);
+ahlam.style.fontSize="x-large";
+nala.style.border="1px solid black";
+nala.style.height="10vh";
+nala.style.marginTop="2%";
+nala.style.width="30vw";
+nala.style.marginLeft="5%";
+ahlam.style.fontWeight="bold";
+nala.style.backgroundColor="lightgray";
+let kama= document.createElement("a");
+kama.innerHTML="show";
+kama.href="https://www.lipsum.com/";
+nala.appendChild(kama);
+kama.style.marginInlineStart="5%";
+    </script>
+</body>
+</html>
