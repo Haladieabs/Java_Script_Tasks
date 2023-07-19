@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <select id="boo">
+        <option value="Flag_of_Norway">Norway</option>
+        <option value="Flag-Costa-Rica">Costa-Rica</option>
+        <option value="Flag-South-Africa">South-Africa</option>
+        <option value="Flag_of_Palestine">Palestine</option>
+        <option value="Flag_of_Jordan">Jordan</option>
+        <option value="2560px-Flag_of_South_Korea_">South-Korea</option>
+      </select>
+      <img id="lolo" src="./Flag_of_Norway.svg.png" alt="" height="50%" width="50%">
+      
+      <script>
+        let pho = document.getElementById("lolo");
+        let kara = document.getElementById("boo");
+        let imageMap = {
+          'Flag_of_Norway': 'Flag_of_Norway.svg.png',
+          'Flag-Costa-Rica': 'Flag-Costa-Rica.webp',
+          'Flag-South-Africa': 'Flag-South-Africa.webp',
+          'Flag_of_Palestine': 'Flag_of_Palestine.svg.png',
+          'Flag_of_Jordan': 'Flag_of_Jordan.svg.png',
+          '2560px-Flag_of_South_Korea_': '2560px-Flag_of_South_Korea_(1945–1948).svg.png',
+        };
+      
+        kara.addEventListener('change', function() {
+          let selectedValue = kara.value;
+          pho.src = imageMap[selectedValue];
+        });
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lacal storage</title>
+</head>
+<body>
+    <h1>local storage</h1>
+    <p id="demo"></p>
+    <script>
+        localStorage.setItem("my name" , "hala" );
+        const name= localStorage.getItem("my name");
+        let mount = localStorage.getItem("my name");
+
+        document.getElementById("demo").innerHTML= mount;
+        console.log(name);
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Local Storage Simple Example</title>
+</head>
+<body>
+  <h1>Local Storage Simple Example</h1>
+  <label for="message">Enter a message:</label>
+  <input type="text" id="message" />
+  <button onclick="saveMessage()">Save Message</button>
+  <button onclick="loadMessage()">Load Message</button>
+
+  <script>
+    // Function to save data to localStorage
+    function saveMessage() {
+      const messageInput = document.getElementById('message');
+      const message = messageInput.value;
+
+      if (message) {
+        localStorage.setItem('userMessage', message);
+        alert('Message saved successfully!');
+      } else {
+        alert('Please enter a message before saving.');
+      }
+    }
+
+    // Function to load data from localStorage and display it
+    function loadMessage() {
+      const savedMessage = localStorage.getItem('userMessage');
+
+      if (savedMessage) {
+        alert('Saved message: ' + savedMessage);
+      } else {
+        alert('No message found in localStorage.');
+      }
+    }
+  </script>
+</body>
+</html>

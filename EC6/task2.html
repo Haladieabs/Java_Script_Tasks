@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task17</title>
+</head>
+<body>
+    <!--Excersice 41: Write a JavaScript program to create an object from the given key-value pairs. 
+  -->
+    <script>
+        function getRandomIntegersInRange(n, min, max) {
+  const result = [];
+  
+  if (min > max) {
+    // Swap min and max if they are in the wrong order
+    [min, max] = [max, min];
+  }
+
+  const range = max - min + 1;
+
+  for (let i = 0; i < n; i++) {
+    const randomInt = Math.floor(Math.random() * range) + min;
+    result.push(randomInt);
+  }
+
+  return result;
+}
+
+// Example usage:
+const n = 10;
+const min = 10;
+const max = 100;
+
+const randomIntegers = getRandomIntegersInRange(n, min, max);
+console.log(randomIntegers);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session storage</title>
+</head>
+<body>
+    <h1>session storage</h1>
+    <p id="demo"></p>
+    <script>
+        sessionStorage.setItem("my name","hala");
+        let sal = sessionStorage.getItem("my name");
+        document.getElementById("demo").innerHTML= sal;
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Session Storage Example</title>
+</head>
+<body>
+  <h1>Session Storage Example</h1>
+  <label for="color">Favorite Color:</label>
+  <input type="text" id="color" />
+  <button onclick="saveColor()">Save Color</button>
+  <button onclick="loadColor()">Load Color</button>
+
+  <script>
+    // Function to save data to sessionStorage
+    function saveColor() {
+      const colorInput = document.getElementById('color');
+      const color = colorInput.value;
+
+      if (color) {
+        sessionStorage.setItem('favoriteColor', color);
+        alert('Color saved successfully!');
+      } else {
+        alert('Please enter a color before saving.');
+      }
+    }
+
+    // Function to load data from sessionStorage and display it
+    function loadColor() {
+      const savedColor = sessionStorage.getItem('favoriteColor');
+
+      if (savedColor) {
+        alert('Saved favorite color: ' + savedColor);
+      } else {
+        alert('No favorite color found in sessionStorage.');
+      }
+    }
+  </script>
+</body>
+</html>

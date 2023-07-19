@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+<body>
+    <select id="boo">
+        <option value="./download (1).png">photo1</option>
+        <option value="photo-1611846043818-e4186a5a494e.jpg">photo2</option>
+        <option value="pexels-pixabay-268533.jpg">photo3</option>
+        <option value="aquatic-aquatic-plant-beautiful-bloom-thumbnail.jpg">photo4</option>
+        <option value="Picture+of+woodlands+taken+on+iphone+using+natural+light.jpg">photo5</option>
+        <option value="flowers-276014_1280.jpg">photo6</option>
+      </select><br>
+      
+      <img id="lolo" src="./download (1).png" alt="" height="40%" width="20%">
+      
+      <script>
+        let pho = document.getElementById("lolo");
+        let kara = document.getElementById("boo");
+        let imageMap = {
+          './download (1).png': 'photo1',
+          'photo-1611846043818-e4186a5a494e.jpg': 'photo2',
+          'pexels-pixabay-268533.jpg': 'photo3',
+          'aquatic-aquatic-plant-beautiful-bloom-thumbnail.jpg': 'photo4',
+          'Picture+of+woodlands+taken+on+iphone+using+natural+light.jpg': 'photo5',
+          'flowers-276014_1280.jpg': 'photo6',
+        };
+      
+        kara.addEventListener('change', function() {
+          let selectedValue = kara.value;
+          pho.src = selectedValue;
+        });
+      </script>
+      
+
+
+
+
+   
+</html> 

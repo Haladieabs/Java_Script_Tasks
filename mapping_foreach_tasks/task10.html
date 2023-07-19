@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task10</title>
+</head>
+<body>
+    <script>
+        function extractKey(arrayOfObject,key){
+            return arrayOfObject.map(obj=>obj[key]);
+        }
+        let data =[{first: 'Elie', last:"Schoppik"}, {first: 'Tim', last:"Garcia"}, {first: 'Matt', last:"Lane"}, {first: 'Colt', last:"Steele"}];
+        const firstNames = extractKey(data,"first");
+        const lastNames = extractKey(data,"last")
+        const fullNameStrings = firstNames.map((firstName, index) => `${firstName} ${lastNames[index]}`);
+    console.log(fullNameStrings);
+    </script>
+</body>
+</html>

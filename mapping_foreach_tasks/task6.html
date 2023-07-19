@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6</title>
+</head>
+<body>
+    <script>
+
+       let x=[
+    {
+        name: "Angelina Jolie",
+        age: 80
+    },
+    {
+        name: "Eric Jones",
+        age: 2
+    },
+    {
+        name: "Paris Hilton",
+        age: 5
+    },
+    {
+        name: "Kayne West",
+        age: 16
+    },
+    {
+        name: "Bob Ziroll",
+        age: 100
+    }
+  ];  
+  function namesOnly(arr){
+            return arr.map(function(person){
+const  nameElement=document.createElement("h1");
+      nameElement.innerHTML=person.name;
+      person.name=nameElement;
+      
+      const ageElement = document.createElement("h2");
+      ageElement.innerHTML=person.age;
+      person.age=ageElement;
+      return person;
+            });}
+            let y =namesOnly(x);
+            console.log(y);
+    </script>
+</body>
+</html>

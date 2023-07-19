@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task10</title>
+</head>
+<body>
+ Excersice 39: Write a JavaScript program to remove the key-value pairs corresponding to the given keys from an object. 
+
+    <script>
+const omit = (obj, arr) =>
+  Object.keys(obj)
+    .filter(k => !arr.includes(k))
+    .reduce((acc, key) => ((acc[key] = obj[key]), acc), {});
+
+console.log(omit({ a: 1, b: '2', c: 3 }, ['b']));
+console.log(omit({ a: 1, b: 2, c: 3 }, ['c']));
+    </script>
+</body>
+</html>

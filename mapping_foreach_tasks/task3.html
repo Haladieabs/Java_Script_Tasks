@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+    <script>
+        let x =['HALA','MARIA','JAMEELAH','Ahmad'];
+        let y = x.map(function capitalizeName(name){
+        const firstLetter =name.charAt(0).toUpperCase();
+        const restOfName = name.slice(1).toLowerCase();
+        return firstLetter + restOfName;
+        })
+        console.log((y));
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task14</title>
+</head>
+<body>
+    <!-- Write a function called addKeyAndValue which accepts an array of objects, a key, and a value and returns the array passed 
+     to the function with the new key and value added for each object -->
+    <script>
+       let x= [{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}];
+
+function addKeyAndValue(x,key,value){
+    for(let i=0 ; i<x.length ; i++){x[i][key]=value;}
+    return x;
+}
+ addKeyAndValue(x ,'title','instructor');
+console.log(x);
+
+
+    </script>
+</body>
+</html>
